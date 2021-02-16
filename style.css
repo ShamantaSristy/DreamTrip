@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/maldives.jpg);
+    background-attachment: scroll;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+.container{
+    height: 400px;
+    width: 100%;
+    padding: 5px 0px 10px 0px;
+}
+.btn{
+    border-radius: 20px;
+    width: 100px;
+    background-image: linear-gradient(#51c2d5, #23689b);
+    border: 0;
+}
+.navbar-brand{
+    color: #fff;
+    font-family: 'Cabin Sketch', cursive;
+}
+.header h1{
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+.header h1{
+    margin: 18px 0;
+}
+.inputGroup{
+    width: 90%;
+    max-width: 500px;
+    border-radius: 30px;
+    margin: auto;
+    padding: 2px;
+}
+.inputGroupAppend{
+    margin: 7px;
+}
+.form-control{
+    height: 45px;
+    border-radius: 50px;
+}
+
+/* Features */
