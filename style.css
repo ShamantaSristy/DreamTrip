@@ -1,53 +1,286 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.header{
+
+.header {
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/maldives.jpg);
-    background-attachment: scroll;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/maldives.jpg);
+    background-attachment: fixed;
     padding-top: 20px;
     text-align: center;
     color: #fff;
 }
-.container{
-    height: 400px;
+
+.container {
+    /* height: 400px; */
     width: 100%;
     padding: 5px 0px 10px 0px;
 }
-.btn{
+
+.loginBtn {
+    width: 100px;
+    padding: 8px 0;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    float: right;
+}
+
+.btn {
     border-radius: 20px;
     width: 100px;
     background-image: linear-gradient(#51c2d5, #23689b);
     border: 0;
 }
-.navbar-brand{
+
+.navbar-brand {
     color: #fff;
     font-family: 'Cabin Sketch', cursive;
+    transition: 1s;
 }
-.header h1{
+
+.navbar-brand a:hover {
+    transform: scale(1.2);
+}
+
+.header h1 {
     padding-top: 100px;
     padding-bottom: 0;
 }
-.header h1{
+
+.header h1 {
     margin: 18px 0;
 }
-.inputGroup{
+
+.inputGroup {
     width: 90%;
     max-width: 500px;
     border-radius: 30px;
     margin: auto;
     padding: 2px;
 }
-.inputGroupAppend{
+
+.inputGroupAppend {
     margin: 7px;
 }
-.form-control{
+
+.form-control {
     height: 45px;
     border-radius: 50px;
 }
 
 /* Features */
+
+.features {
+    padding: 100px 0;
+}
+
+.featuredCard {
+    border-radius: 40px;
+    border: none;
+    transition: 1s;
+}
+
+.featuredCard:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.featureImg img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.price {
+    width: 50px;
+    height: 50px;
+    background: #ff5722;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+    /* margin-top: 10px; */
+    padding: 10px;
+    box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+    position: absolute;
+    left: 20px;
+    bottom: -30px;
+}
+
+.featureImg {
+    position: relative;
+}
+
+.rating {
+    padding: 3px;
+    float: right;
+    background: white;
+    bottom: -1px;
+    right: 0;
+    position: absolute;
+}
+
+.featuredCard .fas, .featuredCard .far {
+    font-size: 15px;
+    color: #ff5722;
+}
+
+.featureDetails {
+    padding: 35px 0 0 0;
+    text-align: justify;
+}
+
+.featureDetails h4 {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.featureDetails .fas {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 2px;
+}
+
+.gallery {
+    padding: 100px 0;
+    background: #efefef;
+}
+
+.gallery-card img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.gallery-card img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-card h4 {
+    display: block;
+    color: #fff;
+    text-shadow: -2px 2px 2px #000;
+    font-weight: 600;
+    font-size: 20px;
+    /* padding-top: 10px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-card {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.banner {
+    height: 500px;
+    background-image: url(images/lowerbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 9%;
+}
+
+.banner-highlights {
+    padding: 70px 0;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+}
+
+.booking-btn {
+    width: 120px;
+    padding: 8px 0;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    margin-top: 20px;
+}
+
+.user-feedback {
+    padding: 100px 0;
+}
+
+.user-review {
+    height: 330px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
+    padding-bottom: 50px;
+}
+
+.user-review p {
+    padding: 50px 10px 10px 10px;
+}
+
+.user-review img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+/* .user-review p::before{
+    content: '\201d';
+    display: block;
+    position: absolute;
+    font-size: 100px;
+    color: #6495ed;
+    font-family: sans-serif;
+    left: 44%;
+} */
+
+.user-review .fas {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #6495ed;
+}
+
+.footer {
+    padding: 100px 20px 10px;
+    background-image: linear-gradient(#0f3057, #719fb0);
+    color: white;
+}
+
+.footer h4 {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.footer p {
+    font-size: 12px;
+    text-align: justify;
+    padding-right: 35px;
+}
+
+.footer .row .fas, .footer .row .fab {
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.footer hr {
+    margin-top: 10px;
+    background: #efefef;
+}
+
+.fa-copyright {
+    margin: 0 5px;
+}
+
+.footer .copyright {
+    text-align: center;
+}
